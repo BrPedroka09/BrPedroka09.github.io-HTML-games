@@ -1,0 +1,101 @@
+* {
+   box-sizing: border-box;
+}
+/*Estilo do body*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.anotacao {
+    background-color: brown;
+    padding: 5px;
+    text-align: center;
+  
+}
+
+.cabecalho {
+    padding: 60px;
+    text-align: center;
+    background-image: url(../Imagens/fig1.png);
+    background-size: cover;
+    color: aliceblue;
+   
+}
+
+/*Estilo da Barra de Navegação*/
+.barra_nav {
+    display: flex;
+    background-color: black;
+}
+.barra_nav a {
+    color: antiquewhite;
+    padding: 14px 10px;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+
+/*Trocar a cor de fundo quando o cursor estiver sobre o link*/
+.barra_nav a:hover {
+    background-color: chartreuse;
+    color: black;
+}
+
+/*configure o div coluna*/
+.coluna {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Criar duas coluna desiguais (30 e 70% */
+.lateral {
+    flex: 30%;
+    background-color: #1e0369;
+    padding: 20px;
+}
+
+.principal {
+    flex: 70%;
+    background-color: #0df1de;
+    padding: 20px;
+}
+
+/*Imagens falsas apenas para marcação do espaço*/
+.imagem-falsa {
+    background-color: aquamarine;
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+}
+
+.imagem-falsa2 {
+    background-color: rgb(126, 22, 217);
+    width: 100%;
+    padding: 20px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+.imagem-falsa3 {
+    background-color: rgb(244, 25, 91);
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+}
+
+    
+@media screen and (max-width: 500px) {
+    .coluna, .barra_nav {
+        flex-direction: column;
+    }
+}
+.cabecalho {
+    background-image: url(../Imagens/fig2.png);
+    background-size: cover;
+    color: aliceblue;
+}
+    
+
+    
